@@ -1,0 +1,117 @@
+.chamada__aplicativo{
+  color: #FFF;
+  text-align: center;
+  background-color: #F76148;
+  padding: 2em 7.5%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.aplicativo__titulo{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: .8em;
+  line-height: 24px;
+  grid-column-end: span 2;
+}
+
+.aplicativo__texto{
+  line-height: 20px;
+  margin-bottom: 1em;
+  grid-column-end: span 2;
+}
+
+.texto-destaque{
+  font-weight: 600;
+}
+
+.aplicativo__button{
+  color: #E93D50;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 5.9rem;
+  padding: 1rem 0 1rem 1rem;
+  box-sizing: border-box;
+  font-size: .5rem;
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+}
+
+.app__download--android{
+  background-image: url("../img/icone-android-logo.svg");
+  background-position: left .5em center;
+}
+
+.app__download--ios{
+  background-image: url("../img/icone-apple-logo.svg");
+  background-position: left 1em center;
+}
+
+@media(min-width:768px){
+  .chamada__aplicativo{
+    background-image: url("../img/mockup-app.png");
+    background-size: 12rem;
+    background-position: left 20% center;
+    background-repeat: no-repeat;
+    padding: 5em 20%;
+    grid-template-columns: 1fr 9rem 9rem;
+    column-gap: 1rem;
+    grid-template-areas: ". titulo titulo" ". texto texto" ". android ios";
+  }
+
+  .aplicativo__titulo{
+    font-size: 1.5rem;
+    line-height: 30px;
+    grid-area: titulo;
+  }
+
+  .aplicativo__texto{
+    line-height: 28px;
+    grid-area: texto;
+  }
+
+  .app__download--android{
+    grid-area: android;
+    justify-self: flex-end;
+  }
+
+  .app__download--ios{
+    grid-area: ios;
+    justify-self: flex-start;
+  }
+}
+
+@media(min-width:1200px){
+  .chamada__aplicativo{
+    grid-template-columns: 1fr 12rem 12rem;
+  }
+
+  .aplicativo__titulo{
+    font-size: 1.8rem;
+  }
+
+  .aplicativo__button{
+    width: 9.5rem;
+    font-size: .8rem;
+    background-size: 1.8rem;
+    padding: 1.5em 0 1.5em 1em;
+  }
+
+  .app__download--android{
+    background-position: left .7rem center;
+    padding-left: 2em;
+  }
+
+  .app__download--ios{
+    background-position: left 1.3rem center;
+  }
+}
+
+/* align background images
