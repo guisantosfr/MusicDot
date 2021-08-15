@@ -1,0 +1,12 @@
+.header-navbar-logo{
+  width: 8em;
+  margin-right: 1em;
+}
+
+.header-matricula h1{
+  font-weight: 300;
+}
+
+.rounded-top{
+  overflow: hidden;
+}
