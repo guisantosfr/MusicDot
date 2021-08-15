@@ -1,6 +1,14 @@
+.navbar{
+  padding: 1em 2em;
+}
+
 .header-navbar-logo{
   width: 8em;
   margin-right: 1em;
+}
+
+.header-matricula{
+  padding: 1em;
 }
 
 .header-matricula h1{
@@ -9,4 +17,8 @@
 
 .rounded-top{
   overflow: hidden;
+}
+
+.table{
+  margin: 1em 0;
 }
